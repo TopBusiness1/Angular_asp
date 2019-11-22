@@ -1,0 +1,20 @@
+div.sm-jumbotron {
+    padding: 2rem;
+    background-color: #38547b;
+    color: #ffffff;    
+}
+
+button.btn-submit {
+    background-color: #38547b;
+    color: #ffffff;
+    width: 100%;
+}
+
+button.btn-submit:focus, button.btn-submit:hover {
+    background-color: #38547b;
+}
+
+input.ng-invalid.ng-dirty {
+    border-bottom-color: #e91e63 !important;
+    box-shadow: 0 1px 0 0 #e91e63 !important;
+}

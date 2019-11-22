@@ -1,0 +1,21 @@
+<form class="col s12 white"  [formGroup]="userLoginForm" (ngSubmit)="onSubmit()"  autocomplete="off">
+  <div class="row">
+      <div class="input-field col s12">
+        <label data-error="Required Field">Username</label>
+        <input type="text" class="form-control" formControlName="UserName">                  
+        </div>
+      </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <label>Password</label>
+      <input type="password" class="form-control" formControlName="Password">            
+      </div>
+    </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <button type="submit" class="btn-large btn-submit" [disabled]="!userLoginForm.valid">Login</button>
+        </div>
+      </div>
+      </form>
+
+    

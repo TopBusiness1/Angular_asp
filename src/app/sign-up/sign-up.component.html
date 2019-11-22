@@ -1,0 +1,43 @@
+   <form class="col s12 white"  [formGroup]="userRegistrationForm" (ngSubmit)="onSubmit()"  autocomplete="off">
+        <div class="row">
+      <div class="input-field col s6">   
+        <label>First Name</label>
+        <input type="text" formControlName="FirstName" class="form-control" >          
+        </div>
+          <div class="input-field col s6">
+            <label>Last Name</label>
+              <input type="text" formControlName="LastName" class="form-control">                
+              </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+              <label data-error="Required Field">Username</label>
+              <input type="text" class="form-control" formControlName="UserName">                  
+              </div>
+            </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <label>Password</label>
+            <input type="password" class="form-control" formControlName="Password">            
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <label data-error="Invalid email">Email</label>
+              <input type="text" formControlName="Email" class="form-control">                
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <label data-error="Required Field">Address</label>
+                <input type="text" class="form-control" formControlName="Address">                  
+                </div>
+              </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <button type="submit" class="btn-large btn-submit" [disabled]="!userRegistrationForm.valid">Submit</button>
+              </div>
+            </div>
+            </form>
+
+          
